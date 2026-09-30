@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hardware Shop — Customers</title><link rel="stylesheet" href="styles.css"><script src="barcode128.js"></script><script src="app.js" defer></script></head>
+<body>
+  <aside class="sidebar"><a class="brand" href="index.html"><span class="brand-mark">H</span><span><span data-shop-name>Hardware Shop</span><small>SALES & STOCK</small></span></a><div class="nav-label">WORKSPACE</div><nav><a class="nav-item" href="index.html"><span>▦</span> Billing</a><a class="nav-item" href="stock.html"><span>▤</span> Stock</a><a class="nav-item active" href="customers.html"><span>▣</span> Customers</a><a class="nav-item" href="purchases.html">Purchases</a><a class="nav-item" href="reports.html">Reports</a><a class="nav-item" href="settings.html">Settings</a></nav><div class="sidebar-foot"><span>Customer and invoice history</span></div></aside>
+  <main class="main"><header class="topbar"><div><span class="eyebrow"><span data-shop-context>HARDWARE SHOP</span> / RECORDS</span><h1>Customers</h1></div><div class="top-actions"><span class="today" id="today"></span></div></header>
+    <div class="section-heading"><div><h2>Past customers and invoices</h2></div><a class="button button-dark" href="index.html">New bill</a></div>
+    <section class="card history-card"><div class="history-tools"><label class="search-box"><span>⌕</span><input id="customer-search" placeholder="Search customer, phone, or invoice…" aria-label="Search customers"></label><span id="history-count">0 invoices</span></div><div class="table-wrap"><table class="history-table"><thead><tr><th>INVOICE</th><th>CASHIER</th><th>CUSTOMER</th><th>DATE</th><th>ITEMS</th><th>PAYMENT</th><th>TOTAL</th><th></th></tr></thead><tbody id="history-rows"></tbody></table></div><div class="history-empty" id="history-empty" hidden>No saved invoices yet. Completed sales will appear here.</div></section>
+  </main><div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>
